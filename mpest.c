@@ -102,7 +102,9 @@ int main (int argc, char *argv[])
 
 	
 	fin = (FILE*)gfopen(argv[1],"r");
-	fscanf(fin,"%s%d%ld%d%d", genetreefile, &distance, &seed, &ngene, &(sptree.ntaxa));
+	seed = atoi(argv[2]);
+	printf("The argument supplied is %ld\n", seed);
+	fscanf(fin,"%s%d%d%d", genetreefile, &distance, &ngene, &(sptree.ntaxa));
 	sprintf(outfile, "%s.mpestout", genetreefile);
 
 	/*the correspondence between species and individual sequences*/

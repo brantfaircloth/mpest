@@ -4,7 +4,7 @@
 ARCHITECTURE ?= mac  
 
 # Set MPI=yes for the parallel version
-MPI ?= yes
+MPI ?= no
 
 # Set DEBUG=yes for a debug version of mrbayes, otherwise set OPTFLAGS 
 # to the desired optimization level (e.g. -O2 -fomit-frame-pointer for

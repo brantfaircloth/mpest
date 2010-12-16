@@ -15,6 +15,8 @@ MPI ?= no
 
 DEBUG ?= no
 #OPTFLAGS = -O2 -march=pentium4 -mfpmath=sse -fomit-frame-pointers
+#compile i386 version
+#OPTFLAGS ?= -O3 -arch i386
 OPTFLAGS ?= -O3
 
 # set compiler for the non-MPI version (mpicc will be used for the MPI
